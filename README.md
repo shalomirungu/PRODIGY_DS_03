@@ -90,8 +90,7 @@ Selection of important variables
 ## Model Training & Evaluation:
 
 Decision Tree classifier was used
-
-Evaluate performance using Accuracy, Precision, Recall, F1-Score, and AUC-ROC and confusion matrix
+Performance was evaluated using Accuracy, Precision, Recall, F1-Score, and AUC-ROC and confusion matrix
 ![image](https://github.com/user-attachments/assets/2df155ca-a202-43d1-8114-feda90fb6214)
 
 ![image](https://github.com/user-attachments/assets/34db96ac-6813-42db-ba85-4fae87473122)
