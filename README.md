@@ -92,3 +92,45 @@ Performance was evaluated using Accuracy, Precision, Recall, F1-Score, and AUC-R
 and confusion matrix
 ![image](https://github.com/user-attachments/assets/34db96ac-6813-42db-ba85-4fae87473122)
 
+### Results for final model
+(a) Precision
+Class 0 (No): 0.94 
+Out of all predictions labeled as "No", 94% were actually "No."
+Class 1 (Yes): 0.64 
+Out of all predictions labeled as "Yes", only 64% were actually "Yes."
+
+Thereby, the model is better at avoiding false positives for No but struggles with those for Yes.
+
+(b) Recall
+Class 0 (No): 0.96 
+Out of all actual "No" cases, 96% were correctly classified.
+Class 1 (Yes): 0.54
+Out of all actual "Yes" cases, only 54% were correctly classified.
+
+The low recall for Class 1 suggests that the model is missing many "Yes" cases (high false negatives).
+
+(c) F1-Score
+The F1-score is the harmonic mean of precision and recall.
+Class 0 (No): 0.95 (Very strong performance)
+Class 1 (Yes): 0.58 (Weak performance)
+
+Since Class 1 has low recall, the F1-score is also lower.
+
+(d) Macro & Weighted Averages
+Macro Avg: Averages precision, recall, and F1-score across both classes equally (0.79, 0.75, 0.77) respecively.
+
+Weighted Avg: Takes into account the number of instances per class, meaning Class 0 (which has more data points) influences the overall metrics more.
+
+
+In conclusion:
+The model performs very well for predicting "No" (clients not subscribing) and the overall accuracy is high. However, the model struggles with predicting "Yes" (clients subscribing).
+
+Low recall for Class 1 means many actual "Yes" cases are misclassified as "No."
+
+Class 1 has significantly fewer samples hence the model is significantly biased towards Class 0.
+
+Recommendations for Improvement:
+Decision Trees can be prone to overfitting. Thereby, it is important to try other models such as Random Forest, XGBoost, or Logistic Regression for better performance.
+
+
+
