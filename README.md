@@ -122,14 +122,14 @@ Macro Avg: Averages precision, recall, and F1-score across both classes equally 
 Weighted Avg: Takes into account the number of instances per class, meaning Class 0 (which has more data points) influences the overall metrics more.
 
 
-**In conclusion:**
+### **In conclusion:**
 The model performs very well for predicting "No" (clients not subscribing) and the overall accuracy is high. However, the model struggles with predicting "Yes" (clients subscribing).
 
 Low recall for Class 1 means many actual "Yes" cases are misclassified as "No."
 
 Class 1 has significantly fewer samples hence the model is significantly biased towards Class 0.
 
-Recommendations for Improvement:
+### Recommendations for future purposes:
 Decision Trees can be prone to overfitting. Thereby, it is important to try other models such as Random Forest, XGBoost, or Logistic Regression for better performance.
 
 
