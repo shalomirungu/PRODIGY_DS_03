@@ -83,10 +83,6 @@ Relationships between features and the target variable
 
 ![image](https://github.com/user-attachments/assets/7777a134-c865-49ef-83ad-37473d03b71b)
 
-### Feature Engineering:
-
-Selection of important variables
-
 ## Model Training & Evaluation:
 
 Decision Tree classifier was used
