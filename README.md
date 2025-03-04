@@ -11,7 +11,7 @@ UCI Machine Learning Repository
 
 ## Data Description
 
-The dataset consists of 45,211 records with 17 input attributes and 1 target variable.
+The dataset consists of 41188 records with 20 input attributes and 1 target variable.
 
 ## Features
 
